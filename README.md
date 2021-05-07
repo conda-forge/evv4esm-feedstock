@@ -125,4 +125,5 @@ Feedstock Maintainers
 =====================
 
 * [@jhkennedy](https://github.com/jhkennedy/)
+* [@mkstratos](https://github.com/mkstratos/)
 

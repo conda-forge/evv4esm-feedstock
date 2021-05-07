@@ -18,15 +18,15 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
   run:
-    - python
+    - python >=3.6
     - six
     - numpy
     - scipy
     - pandas
-    - livvkit
+    - livvkit ==2.1.6
     - netcdf4
     - matplotlib-base
     - pybtex
@@ -55,3 +55,4 @@ about:
 extra:
   recipe-maintainers:
     - jhkennedy
+    - mkstratos
