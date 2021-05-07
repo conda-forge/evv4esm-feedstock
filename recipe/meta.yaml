@@ -1,5 +1,5 @@
 {% set name = "evv4esm" %}
-{% set version = "0.2.1" %}
+{% set version = "0.2.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3726fb8bbd2c264387f874231c1536648ccd5cbeb6fddad11ccac2769cef103b
+  sha256: fb7d728419f612aff84c66c7744cc161fd043cd18654884c3d14660c9ecf24ca
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - evv = evv4esm.__main__:main
 
@@ -42,7 +42,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'Extended verification and validation of Earth system models'
+  summary: Extended verification and validation of Earth system models
 
   # The remaining entries in this section are optional, but recommended.
   description: |
