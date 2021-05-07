@@ -5,9 +5,13 @@ Home: https://github.com/LIVVkit/evv4esm
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/evv4esm-feedstock/blob/master/LICENSE.txt)
 
 Summary: Extended verification and validation of Earth system models
+
+Development: https://github.com/LIVVkit/evv4esm
+
+Documentation: https://github.com/LIVVkit/evv4esm
 
 EVV is a python-based toolkit for extended verification and validation of
 Earth system models (ESMs). Currently, it provides a number tests to
@@ -41,6 +45,7 @@ Installing `evv4esm` from the `conda-forge` channel can be achieved by adding `c
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `evv4esm` can be installed with:
@@ -70,7 +75,7 @@ A feedstock is made up of a conda recipe (the instructions on what and how to bu
 the package) and the necessary configurations for automatic building using freely
 available continuous integration services. Thanks to the awesome service provided by
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/)
-and [TravisCI](https://travis-ci.org/) it is possible to build and upload installable
+and [TravisCI](https://travis-ci.com/) it is possible to build and upload installable
 packages to the [conda-forge](https://anaconda.org/conda-forge)
 [Anaconda-Cloud](https://anaconda.org/) channel for Linux, Windows and OSX respectively.
 
@@ -111,13 +116,14 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
    back to 0.
 
 Feedstock Maintainers
 =====================
 
 * [@jhkennedy](https://github.com/jhkennedy/)
+* [@mkstratos](https://github.com/mkstratos/)
 
