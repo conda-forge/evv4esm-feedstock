@@ -1,5 +1,5 @@
 {% set name = "evv4esm" %}
-{% set version = "0.2.5" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 72037e32c457e7978f66228af0b678fc5fc7d681add079fd04789397cc58cf25
+  sha256: ca4e2039d4b89c4e0af506faa823e53c63e5e69816b98b57e3d3a5b74942dad2
 
 build:
   noarch: python
@@ -26,7 +26,7 @@ requirements:
     - numpy
     - scipy
     - pandas
-    - livvkit ==2.1.6
+    - livvkit >=3.0.1
     - netcdf4
     - matplotlib-base
     - pybtex
