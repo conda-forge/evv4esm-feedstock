@@ -1,11 +1,11 @@
-About evv4esm
-=============
+About evv4esm-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/evv4esm-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/LIVVkit/evv4esm
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/evv4esm-feedstock/blob/main/LICENSE.txt)
 
 Summary: Extended verification and validation of Earth system models
 
