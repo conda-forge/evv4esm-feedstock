@@ -30,6 +30,7 @@ requirements:
     - netcdf4
     - matplotlib-base
     - pybtex
+    - statsmodels
 
 test:
   imports:
