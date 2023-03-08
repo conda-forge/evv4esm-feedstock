@@ -1,5 +1,5 @@
 {% set name = "evv4esm" %}
-{% set version = "0.3.2" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 56c4b3b7a03ff64270f501ed687b667c01d0338c8fd1fc214b27e3cdd58a254a
+  sha256: caf87615fbbbcf2aaf004a8fd8bc7cd3bc028f0b60427107d25ee4a871dca9bd
 
 build:
   noarch: python
