@@ -1,5 +1,5 @@
 {% set name = "evv4esm" %}
-{% set version = "0.5.2" %}
+{% set version = "0.6.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b70d1aa4f58a7eaa3a10c6a90b691e418b15bb3a19ee5a7851236f7d1cf49a86
+  sha256: ca5e0ea91ae3c5e4fe63ea1f4220878f13fe324ec911d0046683d64ea947dbaf
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - evv = evv4esm.__main__:main
@@ -27,11 +27,11 @@ requirements:
     - numpy
     - scipy
     - pandas
-    - livvkit >=3.0.1
+    - livvkit >=3.3.1
     - netcdf4
     - matplotlib-base
     - pybtex
-    - statsmodels ==0.14.0
+    - statsmodels >=0.14.0
 
 test:
   requires:
