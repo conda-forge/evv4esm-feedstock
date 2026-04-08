@@ -27,11 +27,11 @@ requirements:
     - numpy
     - scipy
     - pandas
-    - livvkit >=3.0.1
+    - livvkit >=3.3.1
     - netcdf4
     - matplotlib-base
     - pybtex
-    - statsmodels ==0.14.0
+    - statsmodels >=0.14.0
 
 test:
   requires:
